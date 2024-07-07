@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="left"
+        android:background="@color/Utama">
+
+        <ImageButton
+            android:id="@+id/btnProfil"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/profil" />
+
+        <TextView
+            android:id="@+id/Textname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/btnProfil"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Welcome Back!" />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Textname"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/btnProfil"
+            android:textColor="@color/white"
+            android:fontFamily="@font/inter_medium"
+            android:text="Teknisi"
+            android:textSize="11dp" />
+
+        <ImageButton
+            android:id="@+id/logOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_baseline_logout_24" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/addPdf"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/frame2">
+        <View
+            android:layout_width="833.86dp"
+            android:layout_height="975.26dp"
+            android:background="@drawable/frame2"/>
+        <EditText
+            android:id="@+id/searchEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColorHint="#80444E5C"
+            android:paddingTop="5dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="30dp"
+            android:textSize="16sp"
+            android:drawableEnd="@drawable/ic_baseline_search_24"
+            android:hint="Search Project"
+            android:textColor="@color/Utama"
+            android:fontFamily="@font/inter_medium"
+            android:background="@drawable/shape_form">
+        </EditText>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recView"
+            android:layout_below="@id/searchEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            tools:listitem="@layout/row_project"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/addPdf"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/nav"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_baseline_add_24">
+
+        </ImageView>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_biru"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="Registrasi"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/addPdf"
+        android:fontFamily="@font/inter_medium"
+        android:text="+ Add Project"
+        android:textColor="@color/white"
+        />
+
+
+
+</RelativeLayout>

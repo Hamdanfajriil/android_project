@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "617387726821",
+    "project_id": "lumico-telecommunication",
+    "storage_bucket": "lumico-telecommunication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617387726821:android:cd3077f19414269547410c",
+        "android_client_info": {
+          "package_name": "com.example.lumicotelecommunication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617387726821-26b9h0fq0o4k5nlisjpcb70strm69q45.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8lqB49vptmTf6gwkh1osrBC1qCOIKT7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617387726821-26b9h0fq0o4k5nlisjpcb70strm69q45.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

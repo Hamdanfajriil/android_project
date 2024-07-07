@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfilActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:background="@color/Utama">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="-130dp"
+            android:background="@drawable/ic_baseline_arrow_back_24" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                android:textSize="40px"
+                android:text="Survey Detail" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:layout_below="@id/relativeLayout"
+        android:layout_width="833.86dp"
+        android:layout_height="975.26dp"
+        android:background="@drawable/frame2">
+    </View>
+    <ScrollView
+        android:layout_below="@id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/surveyOptionals"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/pdfRl"
+                    android:layout_width="100dp"
+                    android:layout_height="148dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@color/gray">
+
+                    <com.github.barteksc.pdfviewer.PDFView
+                        android:id="@+id/pdfView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/siteName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:textSize="17dp"
+                    android:textColor="@color/Utama"
+                    android:text="Site Name"
+                    android:layout_toEndOf="@id/pdfRl"
+                    android:fontFamily="@font/roboto_bold"
+                    android:maxLines="1" />
+                
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/siteName"
+                    android:layout_toEndOf="@id/pdfRl">
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/projectLabelTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:text="Project"
+                            android:layout_marginEnd="5dp"/>
+                        <TextView
+                            android:id="@+id/projectTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:text="N/A"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="5dp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:id="@+id/dateLabelTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:text="Date"
+                            android:layout_marginEnd="5dp"/>
+                        <TextView
+                            android:id="@+id/dateTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:text="N/A"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="5dp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:id="@+id/sizeLabelTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:text="Size"
+                            android:layout_marginEnd="5dp"/>
+                        <TextView
+                            android:id="@+id/sizeTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:text="N/A"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="5dp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:id="@+id/viewsLabelTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:text="Views"
+                            android:layout_marginEnd="5dp"/>
+                        <TextView
+                            android:id="@+id/viewsTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:text="N/A"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="5dp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:id="@+id/downloadsLabelTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:text="Downloads"
+                            android:layout_marginEnd="5dp"/>
+                        <TextView
+                            android:id="@+id/downloadsTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.AppCompat.Caption"
+                            android:text="N/A"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="5dp"/>
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tglSrv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Body2"
+                android:text="Tanggal Survei"
+                android:textColor="@color/Utama"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/pdfRl"
+                android:fontFamily="@font/inter_medium"
+                android:layout_below="@id/siteName"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/surveyOptionals"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLihat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Utama"
+            android:text="Lihat"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDownload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/Utama"
+            android:text="Download"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

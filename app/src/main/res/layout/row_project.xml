@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:contentPaddingTop="10dp"
+    app:contentPaddingBottom="10dp"
+    app:contentPaddingLeft="15dp"
+    app:contentPaddingRight="15dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginTop="4dp"
+    app:cardCornerRadius="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:id="@+id/projectVw"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textAppearance="@style/title"/>
+        <ImageButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:background="@drawable/buttondelete"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

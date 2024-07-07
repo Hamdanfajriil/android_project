@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="833.86dp"
+        android:layout_height="975.26dp"
+        android:orientation="vertical"
+        android:gravity="top|center"
+        android:background="@drawable/frame2">
+
+        <View
+            android:id="@+id/logo"
+            android:layout_width="177dp"
+            android:layout_height="191dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/logo"
+            android:text="LumicoApps"
+            android:textAppearance="@style/log"
+            android:gravity="top"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

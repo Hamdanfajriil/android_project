@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="log">
+        <item name="android:textSize">28sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/Utama</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="enter_your_">
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/Utama</item>
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="normal">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#222831</item>
+        <item name="fontFamily">@font/inter_bold</item>
+    </style>
+    <style name="placeholder">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="fontFamily">@font/inter_medium</item>
+    </style>
+    <style name="text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/inter_light</item>
+    </style>
+    <style name="text2">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#4980FF</item>
+        <item name="fontFamily">@font/inter_medium</item>
+    </style>
+    <style name="title">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="message">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="delete">
+        <item name="android:textSize">10sp</item>
+        <item name="fontFamily">@font/inter_light</item>
+        <item name="android:textColor">#ffff</item>
+    </style>
+    <style name="PBarTheme">
+        <item name="color">#780202</item>
+    </style>
+    
+    <style name="cornerImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20%</item>
+    </style>
+
+</resources>

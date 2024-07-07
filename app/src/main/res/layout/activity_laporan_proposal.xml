@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LaporanProposal">
+
+
+    <LinearLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:background="@color/Utama">
+
+        <TextView
+            android:id="@+id/nProject"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Add Project" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tex6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Nama Project / Regional:"
+                android:textSize="40px"
+                android:textColor="@color/Utama"/>
+
+            <EditText
+                android:id="@+id/nameProject"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/Utama"
+                android:layout_below="@id/tex6"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/form_add"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameProject"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Site Id:"
+                android:textSize="40px"
+                android:textColor="@color/Utama" />
+
+            <EditText
+                android:id="@+id/siteId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/Utama"
+                android:layout_below="@+id/text7"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/form_add"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/siteId"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Site Name:"
+                android:textSize="40px"
+                android:textColor="@color/Utama" />
+
+            <EditText
+                android:id="@+id/siteName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/Utama"
+                android:layout_below="@id/text8"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/form_add"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/siteName"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="No Po:"
+                android:textSize="40px"
+                android:textColor="@color/Utama" />
+
+            <EditText
+                android:id="@+id/NoPo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/Utama"
+                android:layout_below="@id/text9"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/form_add"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/NoPo"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Tanggal Survei:"
+                android:textSize="40px"
+                android:textColor="@color/Utama" />
+
+            <EditText
+                android:id="@+id/tglSur"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/Utama"
+                android:layout_below="@id/text10"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/form_add"
+                android:fontFamily="@font/roboto_light"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tglSur"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Alamat:"
+                android:textSize="40px"
+                android:textColor="@color/Utama" />
+
+            <EditText
+                android:id="@+id/alamat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/Utama"
+                android:layout_below="@+id/text1"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/form_add"
+                android:fontFamily="@font/roboto_light"
+                android:hint="Masukan alamat"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="#41FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/alamat"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Koordinat:"
+                android:textSize="40px"
+                android:textColor="@color/Utama" />
+
+            <EditText
+                android:id="@+id/Loparameter"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/text2"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/form_add"
+                android:fontFamily="@font/roboto_light"
+                android:hint="Lattitude"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="#41FFFFFF"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/Laparameter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/text2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/Loparameter"
+                android:background="@drawable/form_add"
+                android:fontFamily="@font/roboto_light"
+                android:hint="Longitude"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="#41FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/Laparameter"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Jenis Tower:"
+                android:textSize="40px"
+                android:textColor="@color/Utama" />
+
+
+            <EditText
+                android:id="@+id/jenisTower"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/Utama"
+                android:layout_below="@id/text3"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/form_add"
+                android:fontFamily="@font/roboto_light"
+                android:hint="Masukan jenis tower"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="#41FFFFFF"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/jenisTower"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Tinggi Tower:"
+                android:textSize="40px"
+                android:textColor="@color/Utama" />
+
+            <EditText
+                android:id="@+id/tinggiTower"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/Utama"
+                android:layout_below="@id/text4"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/form_add"
+                android:fontFamily="@font/roboto_light"
+                android:hint="Berapa meter tinggi tower"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColorHint="#41FFFFFF"
+                android:textSize="15dp" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/text44"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@id/jenisTower"-->
+            <!--                android:layout_marginStart="-140dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_toEndOf="@id/tinggiTower"-->
+            <!--                android:text="m / Meter"-->
+            <!--                android:textSize="15dp" />-->
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tinggiTower"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="40px"
+                android:textColor="@color/Utama" />
+
+            <EditText
+                android:id="@+id/uSingkat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/Utama"
+                android:layout_below="@id/text5"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/form_add"
+                android:fontFamily="@font/roboto_light"
+                android:hint="Uraikan singkat petunjuknya"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="#41FFFFFF"
+                android:textSize="15dp" />
+
+            <ImageButton
+                android:id="@+id/btnuploud"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/uSingkat"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/uploud"
+                android:paddingBottom="25dp"
+                android:src="@drawable/iconupload">
+
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/lmpran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uSingkat"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/roboto_italic"
+                android:gravity="center"
+                android:text="Uploud Denah Lokasi dan Peta Lokasi"
+                android:textSize="40px" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnsubmit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_below="@id/btnuploud"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_bg"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Simpan"
+                android:textSize="15dp">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnprint"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnuploud"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="50dp"
+                android:layout_toEndOf="@id/btnsubmit"
+                android:background="@drawable/shape_bg"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Print"
+                android:textSize="15dp">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

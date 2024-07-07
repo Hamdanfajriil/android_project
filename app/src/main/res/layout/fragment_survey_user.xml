@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".SurveyUserFragment">
+
+    <EditText
+        android:id="@+id/searchEt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColorHint="#80444E5C"
+        android:paddingTop="5dp"
+        android:paddingEnd="30dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="30dp"
+        android:textSize="16sp"
+        android:drawableEnd="@drawable/ic_baseline_search_24"
+        android:hint="Search Project"
+        android:textColor="@color/Utama"
+        android:fontFamily="@font/inter_medium"
+        android:background="@drawable/shape_form">
+    </EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        tools:listitem="@layout/row_pdf_user"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

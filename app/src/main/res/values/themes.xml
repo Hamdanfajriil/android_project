@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LumicoApps" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.LumicoApps" parent="Base.Theme.LumicoApps">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/bluefresh</item>
+        <item name="colorPrimaryVariant">@color/bluefresh</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/bluefresh</item>
+        <item name="colorSecondaryVariant">@color/bluefresh</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="33">#222831</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="118dp"
+    android:layout_marginBottom="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/pdfRl"
+            android:layout_width="80dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="1dp"
+            android:background="#B05C626A">
+
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/pdfView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/siteName"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:textSize="17dp"
+            android:textColor="@color/Utama"
+            android:text="Site Name"
+            android:layout_toEndOf="@id/pdfRl"
+            android:fontFamily="@font/roboto_bold"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/tglSrv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:text="Tanggal Survei"
+            android:textColor="@color/Utama"
+            android:layout_toEndOf="@id/pdfRl"
+            android:fontFamily="@font/inter_medium"
+            android:layout_below="@id/siteName"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+        <TextView
+            android:id="@+id/projectVw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:text="Project"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/inter_medium"
+            android:layout_alignParentBottom="true"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/sizeVw"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/pdfRl"
+            android:fontFamily="@font/inter_medium"
+            android:maxLines="1"
+            android:text="12 mb" />
+        <TextView
+            android:id="@+id/dateVw"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/projectVw"
+            android:layout_toEndOf="@id/sizeVw"
+            android:textAlignment="center"
+            android:fontFamily="@font/inter_medium"
+            android:maxLines="1"
+            android:text="dd/MM/yyyy" />
+        <ImageButton
+            android:id="@+id/moreVw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

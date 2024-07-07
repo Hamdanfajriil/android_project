@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfilActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-150dp"
+        android:background="@drawable/layout1">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="200dp"
+            android:background="@drawable/ic_baseline_arrow_back_24" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Edit Profile"
+                android:textColor="@color/white"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/pProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            app:shapeAppearance="@style/cornerImage"
+            android:src="@drawable/ic_person_gray"/>
+    </RelativeLayout>
+    <View
+        android:layout_below="@id/relativeLayout"
+        android:layout_width="833.86dp"
+        android:layout_height="975.26dp"
+        android:background="@drawable/frame2">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="-30dp"
+        android:layout_marginStart="30dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Nama Lengkap"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:fontFamily="@font/inter_medium"
+                android:padding="10dp"
+                android:background="@drawable/form"
+                android:drawablePadding="8dp"
+                android:textColor="@color/Utama"
+                android:textColorHint="@color/gray"
+                android:inputType="text|textCapWords" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_marginTop="15dp"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Lumico Telecommunication</string>
+    <string name="example_underline"><u>Forgot Password?</u></string>
+    <string name="bintang">*</string>
+    <string name="chekbox">Apakah anda menyetujui <u><b>Persyaratan dan Ketentuan</b></u> yang telah tertera</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="enter_your_">Enter your username and password\nto login</string>
+    <string name="register">Register</string>
+    <string name="enter_your_2">You are only a few step away,just provide some details below to register.</string>
+    <string name="nm1">Masukan Nama Lengkap</string>
+    <string name="fname">Nama Lengkap</string>
+    <string name="e_mail">Email</string>
+    <string name="yourmail_gmail_com">yourmail@gmail.com</string>
+    <string name="alamat_lengkap">Alamat Rumah atau Domisili</string>
+    <string name="alamat">Alamat Lengkap</string>
+    <string name="password">Password</string>
+    <string name="pass">•••••••••••••</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+    <string name="title"> Project Sekatak </string>
+    <string name="message">Tanggal Survei</string>
+    <string name="delete">Delete Project</string>
+</resources>
